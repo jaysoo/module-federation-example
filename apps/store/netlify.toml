@@ -1,0 +1,12 @@
+[build]
+  publish = "dist/apps/store"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
